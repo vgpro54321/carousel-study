@@ -1,3 +1,13 @@
 body {
   background: orange;
 }
+
+.car {
+  background-color: aqua;
+}
+
+.car-item {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+}
