@@ -12,6 +12,14 @@ body {
   height: 100px;
 }
 
+.car-item:hover {
+  filter: brightness(80%);
+
+  transition-property: filter;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+
 .car-item-footer {
   background-color: powderblue;
   width: 80px;
