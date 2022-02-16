@@ -21,3 +21,8 @@ div.car-item-footer {
   text-align: center;
   font-size: small;
 }
+
+div.car-item-sel {
+  border-style: solid;
+  border-width: 1px;
+}
