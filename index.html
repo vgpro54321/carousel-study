@@ -9,18 +9,45 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      function init() {
+        let car = document.querySelector('#car');
+
+        let carItem = document.querySelector('div.car-item');
+
+        if (car) {
+          console.log(car);
+          console.log(car.scrollTop);
+          car.addEventListener('scroll', (event) => {
+            console.log('top', car.scrollTop);
+            console.log('left', car.scrollLeft);
+
+            let eleRect = carItem.getBoundingClientRect();
+
+            console.log('clientRec', eleRect);
+          });
+        }
+      }
+      window.onload = init;
+    </script>
   </head>
   <body>
-    <div class="container-fluid car h-100 overflow-auto">
+    <div id="car" class="container-fluid car h-100 overflow-auto">
       <div class="row">
         <div class="col">
-          <div class="car-item">Item</div>
-        </div>
-      </div>
+          <div class="row">
+            <div class="col">
+              <div class="car-item">Item</div>
+            </div>
+          </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="car-item">Item</div>
+          <div class="row">
+            <div class="col">
+              <div class="car-item-footer">1</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">

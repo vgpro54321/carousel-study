@@ -8,6 +8,16 @@ body {
 
 .car-item {
   background-color: pink;
-  width: 100px;
+  width: 80px;
   height: 100px;
+}
+
+.car-item-footer {
+  background-color: powderblue;
+  width: 80px;
+}
+
+div.car-item-footer {
+  text-align: center;
+  font-size: small;
 }
